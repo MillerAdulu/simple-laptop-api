@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AuthApplication",
+            "request": "launch",
+            "mainClass": "com.miller.auth.AuthApplication",
+            "projectName": "auth"
+        }
+    ]
+}
