@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 import static java.util.Collections.emptyList;
 
 @Service
-public class AppUserService implements UserDetailsService{
+public class AppUserService implements UserDetailsService {
     @Autowired
     private AppUserRepository aRepository;
 
@@ -25,7 +25,7 @@ public class AppUserService implements UserDetailsService{
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         AppUser appUser = aRepository.findByUsername(username);
 
-        if(appUser == null) {
+        if (appUser == null) {
             throw new UsernameNotFoundException(username);
         }
         return new User(appUser.getUsername(), appUser.getPassword(), emptyList());

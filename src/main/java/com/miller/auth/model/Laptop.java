@@ -46,7 +46,6 @@ public class Laptop {
         return manufacturer;
     }
 
-
     /**
      * @param manufacturer the manufacturer to set
      */

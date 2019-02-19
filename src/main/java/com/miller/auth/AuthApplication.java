@@ -16,7 +16,7 @@ public class AuthApplication {
 	public BCryptPasswordEncoder bCryptPasswordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
-	
+
 	public static void main(String[] args) {
 		SpringApplication.run(AuthApplication.class, args);
 	}
